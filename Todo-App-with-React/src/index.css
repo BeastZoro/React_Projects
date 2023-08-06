@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header{
+  width: 100%;
+  background-color: rgb(43, 42, 42);
+  text-align: center;
+  color: rgb(158, 156, 156);
+  padding: 20px 0;
+}
+
+
+/* ==================================================================================== */
+
+.task-container{
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+
+.task-form{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px ;
+  background-color: rgba(0, 0, 0, 0.295);
+ box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.089);
+ border-radius: 10px;
+}
+
+.task-form input{
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 13px 5px;
+  border-radius: 7px ;
+  outline: 0;
+  border: 0;
+  font-weight: 600;
+  text-indent: 5px;
+}
+
+.task-form button{
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  background-color: rgb(255, 99, 71);
+  color: white;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.task-form button:active{
+  transform: scale(.98);
+}
+
+.task-mapped{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 1px solid ; */
+  transition: 1s ease;
+}
+
+.todo-container{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 400px;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.295);
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.089);
+  color: white;
+  border-radius: 10px;
+}
+
+.todo-text{
+  width: 80%;
+}
+
+.todo-title{
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.todo-action{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn{
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  background-color: tomato;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #040b14;
+    height: 100vh;
+    color: #272829;
+    padding: 30px 0;
+    z-index: 9999;
+    transition: .5s ease-in;
+    box-shadow: 3px 5px 3px #272a3ac1;
+}
+
+.header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .header h1{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    color: white;
+}
+
+.social-icons a{
+    font-size: 18px;
+    background: #212431;
+    color: #a8a9b4;
+    padding: 5px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons a:hover{
+    background: #149ddd;
+    color: #fff;
+}
+
+.nav-menu{
+    margin: 60px 0;
+}
+
+.nav-menu ul{
+    list-style: none;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-menu a, .nav-menu a:focus{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #a8a9b4;
+    transition: 0.3s;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ .nav-menu ul li:nth-child(1), .nav-menu ul li a:hover{
+    color: #149ddd;
+}
+
+.active{
+    color: red;
+}
+
+.hamburger{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #149ddd;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.main {
+    margin-left: 300px;
+  }
+
+
+@media (max-width: 1199px) {
+    .header-toggle {
+      left: -300px;
+    }
+  
+    .main {
+      margin-left: 0;
+    }
+  }

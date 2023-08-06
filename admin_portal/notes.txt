@@ -1,0 +1,9 @@
+Pages
+ => Login
+ => Register
+
+ => Dashboard
+ => Users -> Edit User page
+ => Products ->Edit Products page
+
+ => Sign Out 

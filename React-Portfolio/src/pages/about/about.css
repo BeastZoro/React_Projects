@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-section {
+  width: 100%;
+  min-height: 80vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.abt-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid; */
+}
+
+.abt-info-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.about-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-info img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.personal-info p {
+  margin: 0;
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+.bold {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.skills {
+  width: 100%;
+}
+
+.skills h2{
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.skill-progress {
+  position: relative;
+  margin: 20px 0;
+  color:white;
+  font-weight: 600;
+  text-indent: 10px;
+  background-color: #040b1444;
+}
+
+.skill-progress .progress {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: #040b14;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: end;
+  padding: 0 20px;
+  align-items: center;
+  font-weight: 600;
+  height: 25px;
+}
+
+.about-text{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.245);
+  padding: 20px;
+  background-color: rgba(234, 234, 234, 0.511);
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.about-text h2{
+  text-decoration: underline;
+}
+
+.about-text p{
+  margin: 20px 0;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height:inherit;
+}
+@media screen and (min-width: 1000px){
+  
+.abt-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills{
+ flex: 1;
+}
+
+.abt-info-wrapper{
+  gap: 20px;
+}
+}
+
+@media screen and (max-width : 768px) {
+  .about-info{
+    flex-direction: column;
+    align-items: start;
+    /* text-align: center; */
+  }
+}

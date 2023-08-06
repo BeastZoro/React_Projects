@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+}
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  list-style: none;
+  max-width: 90%;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.product-container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  gap: 20px;
+  justify-content: center;
+  grid-auto-rows: 350px;
+  /* border: 1px solid; */
+}
+
+.product-container a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.products {
+  height: 100%;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.568);
+  position: relative;
+}
+
+.product_desc {
+  margin: 20px 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_desc p:nth-child(1) {
+  font-weight: bold;
+  font-size: 0.9rem;
+  
+}
+
+.add_cart {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cart_details {
+  text-align: right;
+  margin: 50px;
+}
+
+.prod_image_container {
+  height: 70%;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid; */
+  display: flex;
+  width: 100%;
+}
+
+.splide,
+.splide__track {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid; */
+}
+
+.product_view_wrapper > .product_details p{
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+
+.product_view_wrapper > .product_desc{
+  font-size: 1.1rem;
+  color: black;
+ padding: 0 20px;
+}
+
+.product_images_wrapper {
+  width: 80%;
+  height: 20rem;
+  margin: 20px auto;
+  position: relative;
+}
+
+.product_images_wrapper img {
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product_view_wrapper .add_cart{
+  display: block;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  float: right;
+  margin: 20px 50px;
+}
+
+.cart_actions{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.cart_actions button{
+  padding:3px 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: transparent;
+}

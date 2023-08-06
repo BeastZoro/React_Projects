@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+.editor-wrapper{
+  width: 60%;
+  max-width: 600px;
+}
+
+.edit-header, .preview-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #4aa3a3;
+  border: 1px solid black;
+}
+
+.editor-actions{
+  display: flex;
+  gap: 20px;
+}
+
+h3{
+  font-size: 1.3rem;
+  font-weight: 600
+}
+
+.edit-header p, .preview-header p{
+  cursor: pointer;
+  font-weight: 600;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.textarea{
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  outline: none;
+  text-indent: 5px;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  background-color: #c0d8d8;
+  border-top: none;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+.preview-wrapper{
+  width: 80%;
+  border: 1px solid;
+}
+
+.preview-text{
+  width: 100%;
+  min-height: 800px;
+  text-indent: 5px;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  background-color: #c0d8d8;
+  border-top: none;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  border: 1px solid red;
+}
+
+ code{
+  background-color: white;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  white-space: pre-line;
+  padding: 0 5px;
+}

@@ -1,0 +1,103 @@
+/* =============================hero section===================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  /* background: black; */
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  position: relative;
+}
+
+/* .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+} */
+
+.hero-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #040b14;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span{
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px #8bc7f0;
+}
+
+.hero-btn button {
+  background-color: transparent;
+  color: #149ddd;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-family: sans-serif;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn a:nth-child(1) button {
+  background-color: #149ddd;
+  color: #040b14f8;
+  border: 0;
+}
+
+.hero-btn a:nth-child(2) button {
+  background-color: transparent;
+  color: #149ddd;
+  border: 1px solid #149ddd;
+}
+
+.hero-btn button:active {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h3 {
+    font-weight: 300;
+    color: #149ddd;
+  }
+
+  .hero-btn button {
+    margin: 10px;
+  }
+}
